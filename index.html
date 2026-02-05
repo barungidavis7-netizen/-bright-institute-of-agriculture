@@ -523,11 +523,13 @@ section{padding:90px 20px}
 </footer>
 <script>
 /* ===== SITE CUSTOMIZER ===== */
-const fab = document.getElementById("fab");
-const customizer = document.getElementById("customizer");
-const closeBtn = document.getElementById("close");
+document.addEventListener("DOMContentLoaded", () => {
+  const fab = document.getElementById("fab");
+  const customizer = document.getElementById("customizer");
+  const closeBtn = document.getElementById("close");
 
-if (fab && customizer && closeBtn) {
+  if (!fab || !customizer || !closeBtn) return;
+
   fab.onclick = () => {
     customizer.classList.toggle("open");
   };
@@ -535,7 +537,8 @@ if (fab && customizer && closeBtn) {
   closeBtn.onclick = () => {
     customizer.classList.remove("open");
   };
-}
+});
+
 </script>
 
 <script>
@@ -562,11 +565,6 @@ setInterval(()=>{
 <!-- SITE CUSTOMIZER -->
 <div id="fab">⚙</div>
 
-<div id="customizer">
-  <div class="header">
-    <h3>SITE CUSTOMIZER</h3>
-    <span id="close">X</span>
-  </div>
 
   <p>BRAND COLOR</p>
   <div class="colors">
@@ -660,10 +658,28 @@ if (fab && customizer && closeBtn) {
 
 
 </script>
+<!-- Floating settings button -->
+<button id="fab">⚙</button>
+
+<!-- Customizer panel -->
+ <button id="fab">⚙</button>
+<div id="customizer">
+  <button id="close">✕</button>
+
+  <h4>TYPOGRAPHY</h4>
+  <button>Modern</button>
+  <button>Geometric</button>
+  <button>Luxury</button>
+
+  <h4>APPEARANCE</h4>
+  <button>🌞 Light</button>
+  <button>🌙 Dark</button>
+</div>
 
 </body>
 
 </html>
+
 
 
 
