@@ -317,9 +317,9 @@ section{padding:90px 20px}
 }
 
 #customizer{
-  position: fixed !important;
+  position: fixed;
   top: 50%;
-  right: -340px;
+  right: -340px;   /* hidden */
   transform: translateY(-50%);
   width: 300px;
   background: #fff;
@@ -327,32 +327,13 @@ section{padding:90px 20px}
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
   transition: right .3s ease;
-  z-index: 99998;
+  z-index: 99999;
 }
-
-#customizer{
-    position: fixed;
-    top: 50%;
-    right: -320px;
-
-    transform: translateY(-50%);
-    width: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
-    transition: right .3s ease;
-    z-index: 99998
-      }
 
 #customizer.open{
-    right: 20px;
+  right: 20px;     /* visible */
 }
 
-
-
- right: 20px;
-}
 </style>
 </head>
 
@@ -533,6 +514,22 @@ section{padding:90px 20px}
     © 2026 Bright Institute of Agriculture – Masindi
   </div>
 </footer>
+<script>
+/* ===== SITE CUSTOMIZER ===== */
+const fab = document.getElementById("fab");
+const customizer = document.getElementById("customizer");
+const closeBtn = document.getElementById("close");
+
+if (fab && customizer && closeBtn) {
+  fab.onclick = () => {
+    customizer.classList.toggle("open");
+  };
+
+  closeBtn.onclick = () => {
+    customizer.classList.remove("open");
+  };
+}
+</script>
 
 <script>
 function openMenu(){
@@ -556,12 +553,12 @@ setInterval(()=>{
 },5000);
 </script>
 <!-- SITE CUSTOMIZER -->
-<div id="fab">⚙️</div>
+<div id="fab">⚙</div>
 
 <div id="customizer">
   <div class="header">
     <h3>SITE CUSTOMIZER</h3>
-    <span id="close">✕</span>
+    <span id="close">X</span>
   </div>
 
   <p>BRAND COLOR</p>
@@ -570,6 +567,10 @@ setInterval(()=>{
     <span class="color dark" data-color="#0b3d2e"></span>
     <span class="color black" data-color="#000000"></span>
   </div>
+</div>
+
+
+ 
 
   <p>TYPOGRAPHY</p>
   <div class="fonts">
@@ -635,11 +636,28 @@ document.getElementById("dark").onclick = () => {
   localStorage.bg = "#111";
   localStorage.text = "#fff";
 };
+// ===== SITE CUSTOMIZER =====
+const fab = document.getElementById("fab");
+const customizer = document.getElementById("customizer");
+const closeBtn = document.getElementById("close");
+
+if (fab && customizer && closeBtn) {
+  fab.onclick = () => {
+    customizer.classList.toggle("open");
+  };
+
+  closeBtn.onclick = () => {
+    customizer.classList.remove("open");
+  };
+}
+
+
 </script>
 
 </body>
 
 </html>
+
 
 
 
