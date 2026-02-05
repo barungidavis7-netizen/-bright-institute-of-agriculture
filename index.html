@@ -496,10 +496,92 @@ setInterval(()=>{
   dots[i].classList.add('active');
 },5000);
 </script>
+<!-- SITE CUSTOMIZER -->
+<div id="fab">⚙️</div>
+
+<div id="customizer">
+  <div class="header">
+    <h3>SITE CUSTOMIZER</h3>
+    <span id="close">✕</span>
+  </div>
+
+  <p>BRAND COLOR</p>
+  <div class="colors">
+    <span class="color green" data-color="#4CAF50"></span>
+    <span class="color dark" data-color="#0b3d2e"></span>
+    <span class="color black" data-color="#000000"></span>
+  </div>
+
+  <p>TYPOGRAPHY</p>
+  <div class="fonts">
+    <button data-font="modern">Modern</button>
+    <button data-font="geometric">Geometric</button>
+    <button data-font="luxury">Luxury</button>
+  </div>
+
+  <p>APPEARANCE</p>
+  <div class="mode">
+    <button id="light">🌞 Light</button>
+    <button id="dark">🌙 Dark</button>
+  </div>
+</div>
+<script>
+const fab = document.getElementById("fab");
+const customizer = document.getElementById("customizer");
+const closeBtn = document.getElementById("close");
+
+fab.onclick = () => customizer.classList.add("open");
+closeBtn.onclick = () => customizer.classList.remove("open");
+
+if (localStorage.brand)
+  document.documentElement.style.setProperty("--brand", localStorage.brand);
+
+if (localStorage.bg) {
+  document.documentElement.style.setProperty("--bg", localStorage.bg);
+  document.documentElement.style.setProperty("--text", localStorage.text);
+}
+
+if (localStorage.font)
+  document.body.style.fontFamily = localStorage.font;
+
+document.querySelectorAll(".color").forEach(c => {
+  c.onclick = () => {
+    document.documentElement.style.setProperty("--brand", c.dataset.color);
+    localStorage.brand = c.dataset.color;
+  };
+});
+
+document.querySelectorAll(".fonts button").forEach(btn => {
+  btn.onclick = () => {
+    let font =
+      btn.dataset.font === "modern" ? "Arial" :
+      btn.dataset.font === "geometric" ? "Poppins" :
+      "Georgia";
+
+    document.body.style.fontFamily = font;
+    localStorage.font = font;
+  };
+});
+
+document.getElementById("light").onclick = () => {
+  document.documentElement.style.setProperty("--bg", "#fff");
+  document.documentElement.style.setProperty("--text", "#111");
+  localStorage.bg = "#fff";
+  localStorage.text = "#111";
+};
+
+document.getElementById("dark").onclick = () => {
+  document.documentElement.style.setProperty("--bg", "#111");
+  document.documentElement.style.setProperty("--text", "#fff");
+  localStorage.bg = "#111";
+  localStorage.text = "#fff";
+};
+</script>
 
 </body>
 
 </html>
+
 
 
 
