@@ -318,7 +318,11 @@ section{padding:90px 20px}
 }
 #fab:hover {
   transform: rotate(30deg);
+}#fab.spin {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
+
 /* ===== CUSTOMIZER FINAL FIX ===== */
 
 #customizer {
@@ -330,6 +334,7 @@ section{padding:90px 20px}
   padding: 20px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
 
   /* HIDDEN BY DEFAULT */
   transform: translateY(200%);
@@ -345,17 +350,7 @@ section{padding:90px 20px}
   opacity: 1;
   pointer-events: auto;
 }
-}
 
-
-  /* HIDDEN */
-  transform: translateY(150%);
-  opacity: 0;
-  pointer-events: none;
-
-  transition: all .3s ease;
-  z-index: 99999;
-}
 
 #customizer.open {
   transform: translateY(0);
@@ -587,99 +582,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-</script>
-
-<script>
-function openMenu(){
-  document.getElementById('mobileMenu').classList.add('active');
-  document.getElementById('menuOverlay').classList.add('active');
-}
-
-function closeMenu(){
-  document.getElementById('mobileMenu').classList.remove('active');
-  document.getElementById('menuOverlay').classList.remove('active');
-}
-const slides=document.querySelectorAll('.slide');
-const dots=document.querySelectorAll('.dot');
-let i=0;
-setInterval(()=>{
-  slides[i].classList.remove('active');
-  dots[i].classList.remove('active');
-  i=(i+1)%slides.length;
-  slides[i].classList.add('active');
-  dots[i].classList.add('active');
-},5000);
-</script>
-<!-- SITE CUSTOMIZER -->
-
-<script>
-const fab = document.getElementById("fab");
-const customizer = document.getElementById("customizer");
-const closeBtn = document.getElementById("close");
-
-fab.onclick = () => customizer.classList.add("open");
-closeBtn.onclick = () => customizer.classList.remove("open");
-
-if (localStorage.brand)
-  document.documentElement.style.setProperty("--brand", localStorage.brand);
-
-if (localStorage.bg) {
-  document.documentElement.style.setProperty("--bg", localStorage.bg);
-  document.documentElement.style.setProperty("--text", localStorage.text);
-}
-
-if (localStorage.font)
-  document.body.style.fontFamily = localStorage.font;
-
-document.querySelectorAll(".color").forEach(c => {
-  c.onclick = () => {
-    document.documentElement.style.setProperty("--brand", c.dataset.color);
-    localStorage.brand = c.dataset.color;
-  };
-});
-
-document.querySelectorAll(".fonts button").forEach(btn => {
-  btn.onclick = () => {
-    let font =
-      btn.dataset.font === "modern" ? "Arial" :
-      btn.dataset.font === "geometric" ? "Poppins" :
-      "Georgia";
-
-    document.body.style.fontFamily = font;
-    localStorage.font = font;
-  };
-});
-
-document.getElementById("light").onclick = () => {
-  document.documentElement.style.setProperty("--bg", "#fff");
-  document.documentElement.style.setProperty("--text", "#111");
-  localStorage.bg = "#fff";
-  localStorage.text = "#111";
-};
-
-document.getElementById("dark").onclick = () => {
-  document.documentElement.style.setProperty("--bg", "#111");
-  document.documentElement.style.setProperty("--text", "#fff");
-  localStorage.bg = "#111";
-  localStorage.text = "#fff";
-};
-// ===== SITE CUSTOMIZER =====
-const fab = document.getElementById("fab");
-const customizer = document.getElementById("customizer");
-const closeBtn = document.getElementById("close");
-
-if (fab && customizer && closeBtn) {
-  fab.onclick = () => {
-    customizer.classList.toggle("open");
-  };
-
-  closeBtn.onclick = () => {
-    customizer.classList.remove("open");
-  };
-}
-
-
-</script>
 <!-- Floating settings button -->
 <button id="fab">⚙</button>
 
@@ -701,6 +603,7 @@ if (fab && customizer && closeBtn) {
 </body>
 
 </html>
+
 
 
 
