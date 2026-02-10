@@ -1,0 +1,37 @@
+<section class="director-section">
+  <div class="director-container">
+
+    <!-- Director Image -->
+    <div class="director-image">
+      <img src="director.jpg" alt="Mr Barungi Davis - Director Bright Institute of Agriculture">
+    </div>
+
+    <!-- Director Content -->
+    <div class="director-content">
+      <h2>Message from the Director</h2>
+      <h3>Mr. Barungi Davis</h3>
+      <p class="director-title">Director, Bright Institute of Agriculture</p>
+
+      <ul class="director-qualifications">
+        <li>MSc in Agriculture</li>
+        <li>BSc in Sustainable Agriculture</li>
+        <li>Diploma in General Agriculture</li>
+        <li>PG Training – Monitoring & Evaluation</li>
+        <li>PG Training – Project Planning & Management</li>
+      </ul>
+
+      <p class="director-message">
+        At Bright Institute of Agriculture, we believe agriculture is not just a career,
+        but a powerful tool for transformation, food security, and national development.
+        Our mission is to equip learners with practical skills, innovation, and discipline
+        needed to succeed in modern agriculture.
+      </p>
+
+      <div class="director-contact">
+        <p><strong>Director:</strong> 0772469055</p>
+        <p>WhatsApp available for inquiries and guidance</p>
+      </div>
+    </div>
+
+  </div>
+</section>

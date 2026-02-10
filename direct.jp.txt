@@ -1,0 +1,30 @@
+<section class="graduation-section">
+  <div class="graduation-container">
+
+    <div class="graduation-image">
+      <img src="direct.jpg" alt="Bright Institute Graduation Ceremony">
+    </div>
+
+    <div class="graduation-content">
+      <h2>Celebrating Achievement & Excellence</h2>
+      <p>
+        At Bright Institute of Agriculture, graduation is more than a ceremony —
+        it represents discipline, persistence, and hands-on mastery of agricultural
+        skills. Our graduates walk out confident, capable, and ready to lead.
+      </p>
+
+      <p>
+        Through practical field training, modern teaching approaches, and close
+        mentorship, learners are prepared for employment, agribusiness, and
+        self-reliance in the agricultural sector.
+      </p>
+
+      <div class="graduation-highlights">
+        <span>✔ Practical & Field-Based Learning</span>
+        <span>✔ Career & Self-Employment Ready</span>
+        <span>✔ Leadership & Innovation</span>
+      </div>
+    </div>
+
+  </div>
+</section>

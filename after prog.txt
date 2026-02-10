@@ -1,0 +1,33 @@
+<section class="institute-story">
+  <div class="institute-container">
+
+    <h2>About Bright Institute of Agriculture</h2>
+
+    <p class="lead">
+      Bright Institute of Agriculture is a center of excellence committed to
+      transforming lives through practical, skill-based agricultural education.
+    </p>
+
+    <p>
+      We believe agriculture is the foundation of sustainable development,
+      food security, and economic empowerment. Our approach blends academic
+      knowledge with real-world practice, ensuring learners gain hands-on
+      experience that prepares them for employment, agribusiness, and innovation.
+    </p>
+
+    <p>
+      Through disciplined training, modern teaching methods, and mentorship,
+      Bright Institute nurtures confident, competent, and forward-thinking
+      agricultural professionals ready to make an impact in their communities
+      and beyond.
+    </p>
+
+    <div class="institute-values">
+      <span>🌱 Practical Learning</span>
+      <span>🌾 Integrity & Discipline</span>
+      <span>🚜 Innovation in Agriculture</span>
+      <span>🎓 Student Success</span>
+    </div>
+
+  </div>
+</section>

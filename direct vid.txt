@@ -1,0 +1,34 @@
+<section class="director-video-section">
+  <div class="director-video-container">
+
+    <div class="video-wrapper">
+      <video controls poster="director.jpg">
+        <source src="director-message.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-text">
+      <h2>A Word from the Director</h2>
+
+      <p>
+        In this special message, the Director of Bright Institute of Agriculture
+        shares the vision, values, and commitment behind the institute.
+        The focus is on practical training, discipline, innovation, and preparing
+        students to succeed in real-world agriculture.
+      </p>
+
+      <p>
+        Bright Institute of Agriculture is built on the belief that education must
+        go beyond theory. Through hands-on training, mentorship, and modern
+        agricultural practices, learners are empowered to become productive,
+        self-reliant, and impactful contributors to society.
+      </p>
+
+      <p class="video-highlight">
+        “We train for competence, confidence, and transformation.”
+      </p>
+    </div>
+
+  </div>
+</section>

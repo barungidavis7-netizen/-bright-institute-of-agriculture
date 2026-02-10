@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Institute of Agriculture – Hero</title>
+
+<style>
+:root{
+  --accent:#2e7d32;
+  --overlay: rgba(0,0,0,.55);
+}
+
+body{
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.hero{
+  position:relative;
+  height:90vh;
+  overflow:hidden;
+  color:#fff;
+}
+
+.slides{
+  position:absolute;
+  inset:0;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  opacity:0;
+  transform:scale(1.1);
+  transition:opacity 1.2s ease, transform 2.5s ease;
+}
+
+.slide.active{
+  opacity:1;
+  transform:scale(1);
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:var(--overlay);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:clamp(2.2rem,5vw,4rem);
+  font-weight:800;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+
+.hero-content h1 span{
+  color:#7CFC90;
+}
+
+.hero-content p{
+  max-width:800px;
+  margin:0 auto 30px;
+  font-size:1.1rem;
+  opacity:.95;
+}
+
+.hero-content .btn{
+  display:inline-block;
+  padding:14px 40px;
+  border:2px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:.3s;
+}
+
+.hero-content .btn:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* dots */
+.dots{
+  position:absolute;
+  bottom:25px;
+  width:100%;
+  text-align:center;
+  z-index:3;
+}
+
+.dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#aaa;
+  margin:0 4px;
+}
+
+.dot.active{
+  background:#ff1744;
+}
+
+/* settings button */
+.settings{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  width:55px;
+  height:55px;
+  background:#ff1744;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  cursor:pointer;
+  z-index:4;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* mobile */
+@media(max-width:768px){
+  .hero{
+    height:85vh;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+  <div class="slides">
+    <div class="slide active" style="background-image:url('lab.jpg')"></div>
+    <div class="slide" style="background-image:url('lab2.png')"></div>
+    <div class="slide" style="background-image:url('students-training.jpg')"></div>
+    <div class="slide" style="background-image:url('crop.jpg')"></div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div>
+      <h1>WELCOME TO <br><span>BRIGHT INSTITUTE OF AGRICULTURE</span></h1>
+      <p>
+        A center of excellence in practical agriculture, science, and innovation — 
+        empowering students with hands-on skills for a sustainable future.
+      </p>
+      <a href="admissions.html" class="btn">APPLY NOW</a>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="settings" title="Change viewer preferences">
+    ⚙
+  </div>
+
+</section>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let index = 0;
+
+setInterval(()=>{
+  slides[index].classList.remove('active');
+  dots[index].classList.remove('active');
+
+  index = (index + 1) % slides.length;
+
+  slides[index].classList.add('active');
+  dots[index].classList.add('active');
+}, 5000);
+</script>
+
+</body>
+</html>

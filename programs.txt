@@ -1,0 +1,53 @@
+<section class="academic-programs">
+  <div class="programs-container">
+
+    <div class="programs-header">
+      <h2>Academic Programs</h2>
+      <p>
+        Flexible learning pathways designed to fit your schedule while delivering
+        strong practical agricultural skills, professional growth, and real-world impact.
+      </p>
+    </div>
+
+    <div class="text-programs-grid">
+
+      <a href="full-time.html" class="text-program-card">
+        <h3>Full-Time Programs</h3>
+        <p>
+          Intensive on-campus training focused on hands-on practice, discipline,
+          and mastery of modern agricultural techniques.
+        </p>
+        <span>Explore Full-Time Programs →</span>
+      </a>
+
+      <a href="weekend.html" class="text-program-card">
+        <h3>Weekend Programs</h3>
+        <p>
+          Designed for working individuals who want to upgrade their agricultural
+          skills without interrupting weekday responsibilities.
+        </p>
+        <span>Explore Weekend Programs →</span>
+      </a>
+
+      <a href="holiday-study.html" class="text-program-card">
+        <h3>Holiday Study Programs</h3>
+        <p>
+          Short, focused programs offered during school holidays to help learners
+          gain valuable agricultural skills in a limited time.
+        </p>
+        <span>Explore Holiday Programs →</span>
+      </a>
+
+      <a href="long-distance.html" class="text-program-card">
+        <h3>Long-Distance Programs</h3>
+        <p>
+          Study from anywhere with guided learning, structured materials,
+          and practical agricultural knowledge applicable to your environment.
+        </p>
+        <span>Explore Long-Distance Programs →</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
