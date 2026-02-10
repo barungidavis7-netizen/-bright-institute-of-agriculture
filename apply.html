@@ -1,229 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <title>Apply Online | Bright Institute of Agriculture – Masindi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f4f8f4;
-  color:#1b1b1b;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8f4;
+  color: #1b1b1b;
 }
-
-/* HEADER */
-header{
-  background:#1b5e20;
-  color:#fff;
-  padding:16px 22px;
-  display:flex;
-  align-items:center;
+header {
+  background: #1b5e20;
+  color: #fff;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
 }
-header img{height:55px;margin-right:15px;}
-header h2{margin:0;font-size:22px;}
-
-/* SECTION */
-section{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
+header img {
+  height: 55px;
+  margin-right: 15px;
 }
-
-.card{
-  background:#fff;
-  border-radius:14px;
-  padding:30px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-  margin-bottom:35px;
+header h2 {
+  margin: 0;
+  font-size: 22px;
 }
-
-h2,h3{color:#1b5e20;margin-top:0;}
-p{line-height:1.6;}
-
-.notice{
-  background:#e8f5e9;
-  border-left:6px solid #1b5e20;
-  padding:18px;
-  border-radius:8px;
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
 }
-
-/* FORM */
-label{
-  font-weight:bold;
-  display:block;
-  margin-bottom:6px;
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
 }
-
-input, select, textarea{
-  width:100%;
-  padding:12px;
-  margin-bottom:18px;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:15px;
+h2, h3, h4 {
+  color: #1b5e20;
+  margin-top: 0;
 }
-
-textarea{resize:none;}
-
-button{
-  background:#1b5e20;
-  color:#fff;
-  border:none;
-  padding:16px;
-  width:100%;
-  border-radius:10px;
-  font-size:17px;
-  font-weight:bold;
-  cursor:pointer;
+p {
+  line-height: 1.6;
 }
-
-button:hover{opacity:0.95;}
-
-/* FOOTER */
-footer{
-  background:#1b5e20;
-  color:#fff;
-  text-align:center;
-  padding:25px 15px;
+.notice {
+  background: #e8f5e9;
+  border-left: 6px solid #1b5e20;
+  padding: 18px;
+  border-radius: 8px;
 }
-
-/* WHATSAPP FLOAT */
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:16px;
-  border-radius:50%;
-  font-size:22px;
-  text-decoration:none;
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+input[type=text], input[type=tel], input[type=date], input[type=file], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+textarea {
+  resize: none;
+}
+button {
+  background: #1b5e20;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.95;
+}
+footer {
+  background: #1b5e20;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
 }
 </style>
 </head>
-
 <body>
-
 <header>
-  <img src="logo.png" alt="Logo">
+  <img src="logo.png" alt="Logo" />
   <h2>Online Application</h2>
 </header>
-
 <section>
+<div class="card">
+<h2>About Bright Institute of Agriculture - Masindi</h2>
+<p>
+The Bright Institute of Agriculture is located in Kigulya Cell, Kigulya Division, Masindi Municipality, Masindi District. It offers Certificate, Diploma, and professional short courses. The institute's motto is “Growing Dreams, Harvesting Success”.<br><br>
+The mission is to produce professional Agribusiness Entrepreneurs and Managers to drive a demand-driven African Economy. The vision is to become the leading Model Agricultural Institution in Uganda, East Africa, and Africa.<br><br>
+Contact: P.O Box ... Kigulya, Kyetegya Masindi Municipality, Masindi District. Tel: 0772 469055 / 0774 121456. Email: brighttech2025@gmail.com.
+</p>
+</div>
+<div class="card notice">
+<h3>📌 Application Fee</h3>
+<p>
+A <strong>non-refundable application fee of UGX 50,000</strong> is required for processing your application.<br>
+<strong>Payment is made after submitting this form.</strong>
+</p>
+</div>
+<div class="card">
+<form onsubmit="sendToWhatsApp(); return false;" enctype="multipart/form-data">
 
-  <!-- INTRO -->
-  <div class="card">
-    <h2>Apply for Admission</h2>
-    <p>
-      Welcome to Bright Institute of Agriculture – Masindi.
-      This online application is open to <strong>P7, S4, and S6 leavers</strong>.
-      Please fill in the form correctly. All information will be sent directly to the Director.
-    </p>
-  </div>
+<h3>📝 Student Information</h3>
 
-  <!-- APPLICATION FEE -->
-  <div class="card notice">
-    <h3>📌 Application Fee</h3>
-    <p>
-      A <strong>non-refundable application fee of UGX 50,000</strong>
-      is required for processing your application.
-      <br><br>
-      <strong>Payment is made after submitting this form.</strong>
-    </p>
-  </div>
+<label>Reporting Date</label>
+<input type="date" id="reportingDate" required />
 
-  <!-- FORM -->
-  <div class="card">
-    <form onsubmit="sendToWhatsApp(); return false;">
+<label>Student Passport Photo (Upload)</label>
+<input type="file" id="studentPhoto" accept="image/*" />
 
-      <h3>👩‍🎓 Student Information</h3>
+<label>Full Name</label>
+<input type="text" id="studentFullName" required />
 
-      <label>Student Full Name</label>
-      <input type="text" id="studentName" required>
+<label>Phone Number</label>
+<input type="tel" id="studentPhone" required />
 
-      <label>Student Phone Number</label>
-      <input type="tel" id="studentPhone" required>
+<label>Gender</label>
+<select id="gender" required>
+  <option value="">Select Gender</option>
+  <option>Male</option>
+  <option>Female</option>
+</select>
 
-      <label>Gender</label>
-      <select id="gender" required>
-        <option value="">Select Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-      </select>
+<label>Home District</label>
+<input type="text" id="homeDistrict" required />
 
-      <label>Academic Level</label>
-      <select id="level" required>
-        <option value="">Select Level</option>
-        <option>P7 Leaver</option>
-        <option>S4 Leaver</option>
-        <option>S6 Leaver</option>
-      </select>
+<label>Physical address of Parent/Guardian Residence</label>
+<input type="text" id="guardianResidence" required />
 
-      <label>Course Applying For</label>
-      <select id="course" required>
-        <option value="">Select Course</option>
-        <option>Junior Vocational Certificate in Agriculture</option>
-        <option>National Certificate in Agriculture</option>
-        <option>National Diploma in Agriculture</option>
-        <option>National Diploma in Animal Production and Management</option>
-        <option>National Diploma in Agribusiness Management</option>
-      </select>
+<label>P.O Box</label>
+<input type="text" id="poBox" />
 
-      <label>Preferred Intake</label>
-      <select id="intake" required>
-        <option value="">Select Intake</option>
-        <option>January Intake</option>
-        <option>February Intake</option>
-        <option>May Intake</option>
-        <option>August Intake</option>
-      </select>
+<label>Tel</label>
+<input type="tel" id="parentTel" />
 
-      <h3>👨‍👩‍👧 Guardian Information</h3>
+<label>Email Address</label>
+<input type="email" id="parentEmail" />
 
-      <label>Guardian Full Name</label>
-      <input type="text" id="guardianName" required>
+<label>Sub-County</label>
+<input type="text" id="subCounty" />
 
-      <label>Guardian Phone Number</label>
-      <input type="tel" id="guardianPhone" required>
+<label>Parish</label>
+<input type="text" id="parish" />
 
-      <label>Additional Message (Optional)</label>
-      <textarea id="message" rows="4" placeholder="Any additional information..."></textarea>
+<label>Village</label>
+<input type="text" id="village" />
 
-      <button type="submit">
-        Submit Application & Continue to WhatsApp
-      </button>
+<label>District</label>
+<input type="text" id="district" />
 
-    </form>
-  </div>
+<label>Name and address of Primary / Secondary school</label>
+<input type="text" id="schoolName" />
 
+<label>PLE Index No</label>
+<input type="text" id="pleIndex" />
+
+<label>PLE Grade</label>
+<input type="text" id="pleGrade" />
+
+<label>UCE Index No</label>
+<input type="text" id="uceIndex" />
+
+<label>UACE Index No</label>
+<input type="text" id="uaceIndex" />
+
+<h4>S.4 Scores</h4>
+<label>English</label>
+<input type="text" id="s4English" />
+
+<label>Agriculture</label>
+<input type="text" id="s4Agriculture" />
+
+<label>Maths</label>
+<input type="text" id="s4Maths" />
+
+<label>Biology</label>
+<input type="text" id="s4Biology" />
+
+<label>Chemistry</label>
+<input type="text" id="s4Chemistry" />
+
+<label>Physics</label>
+<input type="text" id="s4Physics" />
+
+<label>Economics</label>
+<input type="text" id="s4Economics" />
+
+<label>Entrepreneurship</label>
+<input type="text" id="s4Entrepreneurship" />
+
+<h4>S.6 Scores</h4>
+<label>English</label>
+<input type="text" id="s6English" />
+
+<label>Biology</label>
+<input type="text" id="s6Biology" />
+
+<label>Chemistry</label>
+<input type="text" id="s6Chemistry" />
+
+<label>Physics</label>
+<input type="text" id="s6Physics" />
+
+<label>Economics</label>
+<input type="text" id="s6Economics" />
+
+<label>Agriculture</label>
+<input type="text" id="s6Agriculture" />
+
+<label>Entrepreneurship</label>
+<input type="text" id="s6Entrepreneurship" />
+
+<h3>Health Problem (attach doctor's report)</h3>
+<label>Details of health problem, if any</label>
+<textarea id="healthProblems" rows="3"></textarea>
+
+<label>Attach Doctor's Report (Upload)</label>
+<input type="file" id="doctorReport" accept="application/pdf,image/*" />
+
+<h3>Guardian Information</h3>
+<label>Guardian Full Name</label>
+<input type="text" id="guardianFullName" required />
+
+<label>Guardian Phone Number</label>
+<input type="tel" id="guardianPhone" required />
+
+<label>Guardian Passport Photo (Upload)</label>
+<input type="file" id="guardianPhoto" accept="image/*" />
+
+<label>Physical address of Guardian</label>
+<input type="text" id="guardianAddress" />
+
+<label>Guardian District</label>
+<input type="text" id="guardianDistrict" />
+
+<label>Guardian Sub-County</label>
+<input type="text" id="guardianSubCounty" />
+
+<label>Guardian Parish</label>
+<input type="text" id="guardianParish" />
+
+<label>Guardian Village</label>
+<input type="text" id="guardianVillage" />
+
+<label>Parent's Surname</label>
+<input type="text" id="parentSurname" />
+
+<label>Parent's Other Names</label>
+<input type="text" id="parentOtherNames" />
+
+<h3>Hobbies</h3>
+<label>1. Hobby</label>
+<input type="text" id="hobby1" />
+
+<label>2. Hobby</label>
+<input type="text" id="hobby2" />
+
+<h3>Course Applied For</h3>
+<select id="course" required>
+  <option value="">Select Course</option>
+  <option>Junior Vocational Certificate in Agriculture</option>
+  <option>National Certificate in Agriculture</option>
+  <option>National Diploma in Agriculture</option>
+  <option>National Diploma in Animal Production and Management</option>
+  <option>National Diploma in Agribusiness Management</option>
+</select>
+
+<h3>Payment Confirmation</h3>
+<p>
+Please send a screenshot of your payment of UGX 50,000 to:<br>
+- WhatsApp: <strong>0772469055</strong><br>
+- Or deposit to bank account: <strong>Finca Bank 10330200003</strong><br>
+After payment, upload the proof below:
+</p>
+<label>Upload Payment Screenshot / Proof</label>
+<input type="file" id="paymentProof" accept="image/*,application/pdf" />
+
+<button type="submit">Submit Application & Continue to WhatsApp</button>
+</form>
+</div>
 </section>
-
 <footer>
-  <p>© 2026 Bright Institute of Agriculture – Masindi</p>
+<p>© 2026 Bright Institute of Agriculture – Masindi</p>
 </footer>
-
 <a class="whatsapp-float" href="https://wa.me/256772469055">💬</a>
-
 <script>
-function sendToWhatsApp(){
-  const text =
-    "ONLINE ADMISSION APPLICATION%0A%0A" +
-    "Student Name: " + studentName.value + "%0A" +
-    "Student Phone: " + studentPhone.value + "%0A" +
-    "Gender: " + gender.value + "%0A" +
-    "Academic Level: " + level.value + "%0A" +
-    "Course Applied For: " + course.value + "%0A" +
-    "Preferred Intake: " + intake.value + "%0A%0A" +
-    "Guardian Name: " + guardianName.value + "%0A" +
-    "Guardian Phone: " + guardianPhone.value + "%0A%0A" +
-    "Message: " + message.value + "%0A%0A" +
-    "I will send the required documents and UGX 50,000 application fee payment proof.";
+function sendToWhatsApp() {
+  const reportDate = document.getElementById('reportingDate').value;
+  const fullName = document.getElementById('studentFullName').value;
+  const phone = document.getElementById('studentPhone').value;
+  const gender = document.getElementById('gender').value;
+  const homeDistrict = document.getElementById('homeDistrict').value;
+  const guardianRes = document.getElementById('guardianResidence').value;
+  const poBox = document.getElementById('poBox').value;
+  const parentTel = document.getElementById('parentTel').value;
+  const parentEmail = document.getElementById('parentEmail').value;
+  const subCounty = document.getElementById('subCounty').value;
+  const parish = document.getElementById('parish').value;
+  const village = document.getElementById('village').value;
+  const district = document.getElementById('district').value;
+  const schoolName = document.getElementById('schoolName').value;
+  const pleIndex = document.getElementById('pleIndex').value;
+  const pleGrade = document.getElementById('pleGrade').value;
+  const uceIndex = document.getElementById('uceIndex').value;
+  const uaceIndex = document.getElementById('uaceIndex').value;
+  const healthProblems = document.getElementById('healthProblems').value;
+  const s4English = document.getElementById('s4English').value;
+  const s4Agriculture = document.getElementById('s4Agriculture').value;
+  const s4Maths = document.getElementById('s4Maths').value;
+  const s4Biology = document.getElementById('s4Biology').value;
+  const s4Chemistry = document.getElementById('s4Chemistry').value;
+  const s4Physics = document.getElementById('s4Physics').value;
+  const s4Economics = document.getElementById('s4Economics').value;
+  const s4Entrepreneurship = document.getElementById('s4Entrepreneurship').value;
+  const s6English = document.getElementById('s6English').value;
+  const s6Biology = document.getElementById('s6Biology').value;
+  const s6Chemistry = document.getElementById('s6Chemistry').value;
+  const s6Physics = document.getElementById('s6Physics').value;
+  const s6Economics = document.getElementById('s6Economics').value;
+  const s6Agriculture = document.getElementById('s6Agriculture').value;
+  const s6Entrepreneurship = document.getElementById('s6Entrepreneurship').value;
+  const guardianFullName = document.getElementById('guardianFullName').value;
+  const guardianPhone = document.getElementById('guardianPhone').value;
+  const guardianAddress = document.getElementById('guardianAddress').value;
+  const guardianDistrict = document.getElementById('guardianDistrict').value;
+  const guardianSubCounty = document.getElementById('guardianSubCounty').value;
+  const guardianParish = document.getElementById('guardianParish').value;
+  const guardianVillage = document.getElementById('guardianVillage').value;
+  const parentSurname = document.getElementById('parentSurname').value;
+  const parentOtherNames = document.getElementById('parentOtherNames').value;
+  const hobby1 = document.getElementById('hobby1').value;
+  const hobby2 = document.getElementById('hobby2').value;
 
-  window.open("https://wa.me/256772469055?text=" + text, "_blank");
+  const message = 
+    "ONLINE ADMISSION APPLICATION\n\n" +
+    "Reporting Date: " + reportDate + "\n" +
+    "Full Name: " + fullName + "\n" +
+    "Phone: " + phone + "\n" +
+    "Gender: " + gender + "\n" +
+    "Home District: " + homeDistrict + "\n" +
+    "Physical Address of Parent/Guardian Residence: " + guardianRes + "\n" +
+    "P.O Box: " + poBox + "\n" +
+    "Parent Tel: " + parentTel + "\n" +
+    "Parent Email: " + parentEmail + "\n" +
+    "Sub-County: " + subCounty + "\n" +
+    "Parish: " + parish + "\n" +
+    "Village: " + village + "\n" +
+    "District: " + district + "\n" +
+    "School Name: " + schoolName + "\n" +
+    "PLE Index No: " + pleIndex + "\n" +
+    "PLE Grade: " + pleGrade + "\n" +
+    "UCE Index No: " + uceIndex + "\n" +
+    "UACE Index No: " + uaceIndex + "\n" +
+    "Health Problems: " + healthProblems + "\n\n" +
+    "S.4 Scores:\n" +
+    "English: " + s4English + "\n" +
+    "Agriculture: " + s4Agriculture + "\n" +
+    "Maths: " + s4Maths + "\n" +
+    "Biology: " + s4Biology + "\n" +
+    "Chemistry: " + s4Chemistry + "\n" +
+    "Physics: " + s4Physics + "\n" +
+    "Economics: " + s4Economics + "\n" +
+    "Entrepreneurship: " + s4Entrepreneurship + "\n\n" +
+    "S.6 Scores:\n" +
+    "English: " + s6English + "\n" +
+    "Biology: " + s6Biology + "\n" +
+    "Chemistry: " + s6Chemistry + "\n" +
+    "Physics: " + s6Physics + "\n" +
+    "Economics: " + s6Economics + "\n" +
+    "Agriculture: " + s6Agriculture + "\n" +
+    "Entrepreneurship: " + s6Entrepreneurship + "\n\n" +
+    "Guardian Full Name: " + guardianFullName + "\n" +
+    "Guardian Phone: " + guardianPhone + "\n" +
+    "Guardian Address: " + guardianAddress + "\n" +
+    "Guardian District: " + guardianDistrict + "\n" +
+    "Guardian Sub-County: " + guardianSubCounty + "\n" +
+    "Guardian Parish: " + guardianParish + "\n" +
+    "Guardian Village: " + guardianVillage + "\n" +
+    "Parent's Surname: " + parentSurname + "\n" +
+    "Parent's Other Names: " + parentOtherNames + "\n" +
+    "Hobbies:\n1. " + hobby1 + "\n2. " + hobby2;
+
+  // Open WhatsApp with message
+  const whatsappNumber = "256772469055"; // your number
+  window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message), "_blank");
 }
 </script>
-
 </body>
 </html>
